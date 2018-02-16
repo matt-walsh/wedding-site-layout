@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(225, 231, 233);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 10em auto auto auto;
+    grid-gap: 0.25em;
+    
+}
+.app > div {
+    background-color: rgb(253, 251, 226);
+    font-size: 1em;
+}
+.header {
+    text-align: right;
+    grid-column: 1 / 5;
+}
+
+.navigation {
+    grid-column: 1 / 2;
+}
+
+.navigation ul {
+    margin: 0em;
+    padding: .25em 0em 0em 0em;
+    text-align: center;
+    list-style: none;
+}
+
+.navigation li {
+    
+}
+.content {
+    grid-column: 2 / 5;
+}
+
