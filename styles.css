@@ -1,19 +1,21 @@
 body {
     background-color: rgb(225, 231, 233);
+    overflow: hidden;
 }
 
 .app {
     display: grid;
     grid-template-columns: 10em auto auto auto;
-    grid-gap: 0.25em;
+    grid-gap: 0.0em;
+    padding: 2em;
     
 }
-.app > div {
-    background-color: rgb(253, 251, 226);
-    font-size: 1em;
+.header, .navigation {
+    background-color: rgb(230, 230, 255);
 }
 .header {
     text-align: right;
+    padding-right: 0.5em;
     grid-column: 1 / 5;
 }
 
@@ -29,9 +31,30 @@ body {
 }
 
 .navigation li {
-    
+    padding: .50em;
 }
+
 .content {
+    height: 100vh;
+    overflow: auto;
+    background-color: white; 
+    padding: 0.5em;
     grid-column: 2 / 5;
 }
+
+@media screen and (max-width: 650px){
+    .header{
+        text-align: center;
+    }
+
+    .navigation {
+        grid-column: 1 / 5;
+    }
+
+    .content {
+        grid-column: 1 / 5;
+    }
+}
+
+
 
