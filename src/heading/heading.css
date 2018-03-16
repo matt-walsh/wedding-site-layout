@@ -1,0 +1,5 @@
+.header {
+    text-align: right;
+    padding-right: 0.5em;
+    grid-column: 1 / 5;
+  }
