@@ -20,59 +20,57 @@ import { Heading } from './heading/heading.js'
 class App extends React.Component {
 
   AppState = {
-    Landing : "/",
-    Story : "/story",
-    Party : "/party",
-    Gifts : "/gifts",
-    Location : "/location",
-    Schedule: "/schedule",
-    Menu: "/menu"
+    Landing : <Landing />,
+    Story : <OurStory />,
+    Party : <Party />,
+    Gifts : <Gifts />,
+    Location : <Location />,
+    Schedule: <Schedule />,
+    Menu: <Menu />,
+    NotFound: <Landing />
   }
   constructor(props) {
     super(props);
-    this.state = {content : this.AppState.Landing};
+    this.state = {content : this.AppState.Party};
+    this.ChangePage = this.ChangePage.bind(this);
+  }
+
+  ChangePage(page){
+    let newPage;
+    switch (page) {
+      case 'Landing':
+        newPage = this.AppState.Landing;
+        break;
+      case 'Story':
+        newPage = this.AppState.Story;
+        break;
+      case 'Party':
+        newPage = this.AppState.Party;
+        break;
+      case 'Gifts':
+        newPage = this.AppState.Gifts;
+        break;
+      case 'Location':
+        newPage = this.AppState.Location;
+        break;
+      case 'Schedule':
+        newPage = this.AppState.Schedule;
+        break;
+      case 'Menu':
+        newPage = this.AppState.Menu;
+        break;
+      default:
+      newPage = this.AppState.NotFound
+        break;
+    }
+
+    this.setState({
+      content : newPage
+    });
   }
 
   render() {
     console.log(this.state.content)
-    let content;
-    switch(this.state.content){
-      case "/":{
-        content =  <Landing />;
-        break;
-      }
-
-      case "/story":{
-        content =  <OurStory />;
-        break;
-      }
-
-      case "/party":{
-        content =  <Party />;
-        break;
-      }
-
-      case "/gifts":{
-        content =  <Gifts />;
-        break;
-      }
-      case "/location":{
-        content =  <Location />;
-        break;
-      }
-      case "/schedule":{
-        content =  <Schedule />;
-        break;
-      }
-      case "/menu":{
-        content =  <Menu />;
-        break;
-      }
-
-      default: {
-        content =  <h2>Page Not Found</h2>;
-      }
-    }
 
     return (
       <div className="app">
@@ -82,11 +80,11 @@ class App extends React.Component {
         </div>
 
         <div className="navigation">
-          <Nav/>
+          <Nav onClick = {this.ChangePage}/>
         </div>
 
         <div className="content">
-          {content}
+          {this.state.content}
         </div>
       </div>
     );
