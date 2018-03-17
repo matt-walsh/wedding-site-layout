@@ -1,5 +1,6 @@
 body {
   background-color: rgb(225, 231, 233);
+  padding-bottom: 5em;
   overflow: hidden;
 }
 
@@ -8,7 +9,6 @@ body {
   grid-template-columns: 10rem auto auto auto;
   grid-gap: 0.0em;
   padding: 2em;
-  
 }
 .header, .navigation {
   background-color: rgb(230, 230, 255);
@@ -21,13 +21,13 @@ body {
 
 .navigation ul {
   margin: 0em;
-  padding: .25em 0em 0em 0em;
+  padding: 0.25em 0em 0em 0em;
   text-align: center;
   list-style: none;
 }
 
 .navigation li {
-  padding: .50em;
+  padding: 0.5em;
 }
 
 .content {

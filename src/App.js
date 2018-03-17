@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 //Pages
@@ -31,7 +30,7 @@ class App extends React.Component {
   }
   constructor(props) {
     super(props);
-    this.state = {content : this.AppState.Party};
+    this.state = {content : this.AppState.Story};
     this.ChangePage = this.ChangePage.bind(this);
   }
 
@@ -70,8 +69,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.content)
-
     return (
       <div className="app">
 
