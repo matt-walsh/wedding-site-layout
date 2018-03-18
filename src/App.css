@@ -1,7 +1,6 @@
 body {
   background-color: rgb(225, 231, 233);
-  padding-bottom: 5em;
-  overflow: hidden;
+  
 }
 
 .app {
@@ -31,16 +30,16 @@ body {
 }
 
 .content {
-  height: 100vh;
-  overflow: auto;
+  height: 65vh;
+  width: 100%;
+  overflow-y: scroll;
   background-color: white; 
-  padding: 0.5em;
   grid-column: 2 / 5;
 }
 
 @media screen and (max-width: 650px){
-  .header{
-      text-align: center;
+  body{
+    overflow: scroll;
   }
 
   .navigation {

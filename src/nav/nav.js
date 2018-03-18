@@ -19,7 +19,7 @@ export class Nav extends React.Component {
     this.HandleClick = this.HandleClick.bind(this);
 
     for(let page in this.pagesList){
-      this.pageLinks.push(<li><button id={page} onClick={this.HandleClick}>{this.pagesList[page]}</button></li>)
+      this.pageLinks.push(<li key={page}><button id={page} onClick={this.HandleClick}>{this.pagesList[page]}</button></li>)
     }
   }
 

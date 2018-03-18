@@ -1,5 +1,10 @@
 .header {
     text-align: right;
-    padding-right: 0.5em;
     grid-column: 1 / 5;
+}
+
+@media screen and (max-width: 650px){  
+  .header{
+    text-align: center;
   }
+}
