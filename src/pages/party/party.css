@@ -1,0 +1,40 @@
+.party-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 0.0em;
+    padding: 2em;
+    text-align: center;
+}
+
+.party-container img{
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 161px;
+}
+
+.groom-container{
+    grid-column: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.0em;
+}
+
+.bride-container{
+    grid-column: 3 / 4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.0em;
+}
+
+.mark-container{
+    grid-column: 1 / 3;
+}
+
+
+
+.tiff-container{
+    grid-column: 1 / 3;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import './heading.css';
-import {Countdown} from './countdown/countdown'
+import { Countdown } from './countdown/countdown'
  
 export class Heading extends React.Component {
   render() {
