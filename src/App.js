@@ -9,6 +9,7 @@ import { Location } from './pages/location/location.js';
 import { Schedule } from './pages/schedule/schedule.js';
 import { Menu } from './pages/menu/menu.js';
 import { OurStory } from './pages/story/story.js';
+import { Accommodations } from './pages/accommodations/accommodations.js'
 
 //Navigation Bar
 import { Nav } from './nav/nav.js'
@@ -26,11 +27,12 @@ class App extends React.Component {
     Location : <Location />,
     Schedule: <Schedule />,
     Menu: <Menu />,
+    Accommodations: <Accommodations />,
     NotFound: <Landing />
   }
   constructor(props) {
     super(props);
-    this.state = {content : this.AppState.Party};
+    this.state = {content : this.AppState.Location};
     this.ChangePage = this.ChangePage.bind(this);
   }
 
@@ -57,6 +59,9 @@ class App extends React.Component {
         break;
       case 'Menu':
         newPage = this.AppState.Menu;
+        break;
+      case 'Accommodations':
+        newPage = this.AppState.Accommodations;
         break;
       default:
       newPage = this.AppState.NotFound

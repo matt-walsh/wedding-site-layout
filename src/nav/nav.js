@@ -5,11 +5,12 @@ export class Nav extends React.Component {
   pagesList = {
     'Landing' : 'Home', 
     'Story' : 'Our Story', 
-    'Party' : 'Wedding Party', 
-    'Gifts' : 'Gift Registry', 
-    'Location' : 'Directions',
+    'Party' : 'Wedding Party',
     'Schedule': 'Schedule',
-    'Menu': 'Menu'
+    'Menu': 'Menu',
+    'Location' : 'Directions',
+    'Accommodations' : 'Accommodations',
+    'Gifts' : 'Gift Registry'
   };
   pageLinks = [];
 
@@ -27,6 +28,7 @@ export class Nav extends React.Component {
     const page = event.target.id;
     this.props.onClick(page)
   }
+
   render() {
     return (
       <div>

@@ -1,0 +1,83 @@
+.hotel-container{
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+.hotel-container div{
+    margin: 0.15em;
+    border:solid black;
+    border-width: 0.25em;
+}
+
+.anchorage{
+    grid-column: 1 / 2;
+}
+
+.surfside{
+    grid-column: 2 / 3;
+}
+
+.dauphinee{
+    grid-column: 3 / 4;
+}
+
+.beach{
+    grid-column: 1 / 2;
+}
+
+.pleasent{
+    grid-column: 2 / 3;
+}
+
+@media screen and (max-width: 825px){
+    .hotel-container{
+        grid-template: 1fr;
+    }
+    .anchorage{
+        grid-column: 1 / 2;
+    }
+    
+    .surfside{
+        grid-column: 1 / 2;
+    }
+    
+    .dauphinee{
+        grid-column: 1 / 2;
+    }
+    
+    .beach{
+        grid-column: 1 / 2;
+    }
+    
+    .pleasent{
+        grid-column: 1 / 2;
+    }
+}
+
+@media screen and (max-width: 1156px) and (min-width: 826px){
+    .hotel-container{
+        grid-template: 1fr 1fr;
+    }
+
+    .anchorage{
+        grid-column: 1 / 2;
+    }
+    
+    .surfside{
+        grid-column: 2 / 3;
+    }
+    
+    .dauphinee{
+        grid-column: 1 / 2;
+    }
+    
+    .beach{
+        grid-column: 2 / 3;
+    }
+    
+    .pleasent{
+        grid-column: 1 / 2;
+    }
+}

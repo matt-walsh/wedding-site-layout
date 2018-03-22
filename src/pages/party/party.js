@@ -17,7 +17,6 @@ export class Party extends React.Component {
   render() {
     return (
       <div className="party-container">
-
         <div className="groom-container">
           <div className="mark-container">
             <img src={Mark}/>
