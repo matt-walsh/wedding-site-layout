@@ -32,7 +32,7 @@ class App extends React.Component {
   }
   constructor(props) {
     super(props);
-    this.state = {content : this.AppState.Location};
+    this.state = {content : this.AppState.Menu};
     this.ChangePage = this.ChangePage.bind(this);
   }
 
