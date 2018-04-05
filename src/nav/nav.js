@@ -1,6 +1,5 @@
 import React from 'react';
 import './nav.css';
-
 export class Nav extends React.Component {
   pagesList = {
     'Landing' : 'Home', 
@@ -17,24 +16,38 @@ export class Nav extends React.Component {
   constructor(props){
     super(props);
 
-    this.HandleClick = this.HandleClick.bind(this);
-
+    this.HandleNavigationClick = this.HandleNavigationClick.bind(this);
+  
     for(let page in this.pagesList){
-      this.pageLinks.push(<li key={page}><button id={page} onClick={this.HandleClick}>{this.pagesList[page]}</button></li>)
+      this.pageLinks.push(<li key={page}><button className="page-link" id={page} onClick={this.HandleNavigationClick}>{this.pagesList[page]}</button></li>)
     }
   }
 
-  HandleClick(event){
+  HandleCollapseClick(event){
+    let linkContainer = document.getElementById("links")
+    console.log(linkContainer.className);
+    if(linkContainer.className === "links-hidden"){
+      linkContainer.className = "links-visible";
+    }
+    else{
+      linkContainer.className = "links-hidden";
+    }
+  }
+
+  HandleNavigationClick(event){
     const page = event.target.id;
     this.props.onClick(page)
   }
 
   render() {
     return (
-      <div>
+      <div className="nav-content">
+        <button className="collapse" onClick={this.HandleCollapseClick}></button>
+        <div id="links" className="links-visible">
           <ul>
-              {this.pageLinks}
+            {this.pageLinks}
           </ul>
+        </div>
       </div>
     );
   }

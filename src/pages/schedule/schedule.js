@@ -4,10 +4,6 @@ import './schedule.css';
  
 export class Schedule extends React.Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   startTime = Moment("08 18 3:30pm", "MM DD h:mma");
   endTime = Moment("08 19 1:00am", "MM DDS h:mma");
   hoursBetween = this.endTime.diff(this.startTime, "hours");
