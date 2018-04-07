@@ -2,7 +2,9 @@ body {
   background-color: rgb(225, 231, 233);
   
 }
-
+p{
+  font-family: 'Yeon Sung', cursive;
+}
 .app {
   display: grid;
   grid-template-columns: 10rem auto auto auto;
