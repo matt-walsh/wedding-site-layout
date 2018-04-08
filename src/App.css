@@ -7,7 +7,7 @@ p{
 }
 .app {
   display: grid;
-  grid-template-columns: 10rem auto auto auto;
+  grid-template-columns: 10rem auto;
   grid-gap: 0.0em;
   padding: 2em;
 }
