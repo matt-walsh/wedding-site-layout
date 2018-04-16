@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.party-container h3{
+    font-size: 0.75em;
+}
+
 .party-container img{
     width: 150px;
     height: 161px;

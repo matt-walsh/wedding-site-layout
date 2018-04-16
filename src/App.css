@@ -5,6 +5,19 @@ body {
 p{
   font-family: 'Yeon Sung', cursive;
 }
+
+h1{
+  font-family: super_mario_brothersregular;
+  letter-spacing: 0.15em;
+}
+h2{
+  font-family: emulogicregular;
+  font-size: 1rem;
+}
+h3, h4{
+  font-family: emulogicregular;
+}
+
 .app {
   display: grid;
   grid-template-columns: 10rem auto;

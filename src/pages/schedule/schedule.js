@@ -3,12 +3,6 @@ import Moment from 'moment';
 import './schedule.css';
  
 export class Schedule extends React.Component {
-
-  startTime = Moment("08 18 3:30pm", "MM DD h:mma");
-  endTime = Moment("08 19 1:00am", "MM DDS h:mma");
-  hoursBetween = this.endTime.diff(this.startTime, "hours");
-  halfHoursBetween = this.hoursBetween * 2;
-  
   schedule = [
     { Event : "Ceremony", Time : Moment("4:00pm", "h:mma")},
     { Event : "Social Hour", Time : Moment("4:30pm", "h:mm a")},
@@ -33,7 +27,7 @@ export class Schedule extends React.Component {
 
     let rows = [];
     this.schedule.forEach(element => {
-      rows.push(<div className="event">
+      rows.push(<div key={element.Event} className="event">
                   <div className={element.Event + "-eventTitle"}>
                     <h3>{element.Event}</h3>  
                   </div>
@@ -43,7 +37,6 @@ export class Schedule extends React.Component {
                   </div>
                 </div>);
     });
-    console.log(rows)
     return (rows)
   }
 

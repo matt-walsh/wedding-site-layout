@@ -7,7 +7,7 @@ export class Location extends React.Component {
     return (
         <div className="location-container">
           <div className="address">
-          <h2>Location</h2>
+          <h3>Location</h3>
             <p>The wedding will be held at the Hubbards Barn in Hubbards, Nova Scotia.</p>
             <ul>
               <li>57 Highway #3</li>
@@ -22,7 +22,7 @@ export class Location extends React.Component {
           </div>
 
           <div className="directions">
-            <h2>Directions</h2>
+            <h3>Directions</h3>
             <ul>
               <li>Take Highway # 103 to Exit 6 Hubbards</li>
               <li>
@@ -36,8 +36,8 @@ export class Location extends React.Component {
             </ul>
           </div>
 
-          <div className="googleMap">
-            <iframe title="Directions to barn via Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.0921579190617!2d-64.07095668479624!3d44.63603337909989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b59ee96d1732ab5%3A0xda3aab2c2e1a16f6!2sHubbards+Barn+Association!5e0!3m2!1sen!2sca!4v1521729601020" frameBorder="0" allowFullScreen></iframe>
+          <div className="google-map">
+            <iframe title="Directions to barn via Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2839.0921579190617!2d-64.07095668479624!3d44.63603337909989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b59ee96d1732ab5%3A0xda3aab2c2e1a16f6!2sHubbards+Barn+Association!5e0!3m2!1sen!2sca!4v1521729601020" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
           </div>
         </div>
     );

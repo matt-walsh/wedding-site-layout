@@ -6,7 +6,7 @@ export class Heading extends React.Component {
   render() {
     return (
       <div>
-        <h1>Symonds-Walsh Wedding</h1>
+        <h1>SYMONDS AND WALSH WEDDING</h1>
         <Countdown />
       </div>
     );

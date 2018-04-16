@@ -1,0 +1,8 @@
+.gifts-container a{
+    text-decoration: none;
+    color: lightslategray;
+}
+
+.gifts-container li{
+    font-family: 'Yeon Sung', cursive;
+}

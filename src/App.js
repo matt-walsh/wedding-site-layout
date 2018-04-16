@@ -1,4 +1,5 @@
 import React from 'react';
+import './fonts.css'
 import './App.css';
 
 //Pages
@@ -32,7 +33,7 @@ class App extends React.Component {
   }
   constructor(props) {
     super(props);
-    this.state = {content : this.AppState.Party};
+    this.state = {content : this.AppState.Landing};
     this.ChangePage = this.ChangePage.bind(this);
   }
 

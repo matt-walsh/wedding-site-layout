@@ -7,7 +7,7 @@ export class OurStory extends React.Component {
   render() {
     return (
       <div className="story-content">
-        <h2>Our Story</h2>
+        <h3>Our Story</h3>
         <div className="left-col">
           <p>
             We met at the start of college in 2007 when we both enrolled in the Computer Electronics Technician course. 

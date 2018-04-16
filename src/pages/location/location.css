@@ -3,6 +3,14 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.location-container li{
+    font-family: 'Yeon Sung', cursive;
+}
+
+.location-container li ul li{
+    list-style-type: square;
+}
+
 .address{
     grid-column: 1 / 2
 }
@@ -13,11 +21,10 @@
 
 .mario-map {
     grid-column: 2 / 3;
-    
 }
 
 .google-map{
-    grid-column: 2 /3;
+    grid-column: 2 / 3;
 }
 
 .mario-map img{
@@ -41,10 +48,5 @@
     
     .google-map{
         grid-column: 1 / 3;
-    }
-
-    .google-map iframe{
-        width: 100%;
-        height: auto;
     }
 }

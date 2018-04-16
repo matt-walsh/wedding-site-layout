@@ -33,19 +33,19 @@ export class Party extends React.Component {
           </div>
           <div className="griff-container">
             <img src={Griffin} alt="Griff"/>
-            <h3>Friend</h3>
+            <h3>Groomsmen</h3>
           </div>
           <div className="ryan-container">
             <img src={Ryan} alt="Ryan"/>
-            <h3>Friend</h3>
+            <h3>Groomsmen</h3>
           </div>
           <div className="will-container">
             <img src={Will} alt="Will"/>
-            <h3>Friend</h3>
+            <h3>Groomsmen</h3>
           </div>
           <div className="jordan-container">
             <img src={Jordan} alt="Jordan"/>
-            <h3>Nephew</h3>
+            <h3>Groomsmen</h3>
           </div>
           <div className="walshs-container">
             <img src={Walshs} alt="Parents"/>
@@ -61,22 +61,22 @@ export class Party extends React.Component {
 
           <div className="vanessa-container">
             <img src={Vanessa} alt="Vanessa"/>
-            <h3>Sister</h3>
+            <h3>Bridesmaid</h3>
           </div>
 
           <div className="megan-container">
             <img src={Megan} alt="Megan"/>
-            <h3>Sister</h3>
+            <h3>Bridesmaid</h3>
           </div>
           
           <div className="jen-container">
             <img src={Jen} alt="Jen"/>
-            <h3>Sister in Law</h3>
+            <h3>Bridesmaid</h3>
           </div>
 
           <div className="dan-container">
             <img src={Dan} alt="Dan"/>
-            <h3>Friend</h3>
+            <h3>Bridesmaid</h3>
           </div>
 
           <div className="debra-container">
